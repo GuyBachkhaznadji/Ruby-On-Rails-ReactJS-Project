@@ -1,0 +1,37 @@
+<%= form_with(model: search, local: true) do |form| %>
+  <% if search.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(search.errors.count, "error") %> prohibited this search from being saved:</h2>
+
+      <ul>
+      <% search.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title, id: :search_title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :profileIndex %>
+    <%= form.text_field :profileIndex, id: :search_profileIndex %>
+  </div>
+
+  <div class="field">
+    <%= form.label :jobDesc %>
+    <%= form.text_field :jobDesc, id: :search_jobDesc %>
+  </div>
+
+  <div class="field">
+    <%= form.label :jobDescArray %>
+    <%= form.text_field :jobDescArray, id: :search_jobDescArray %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

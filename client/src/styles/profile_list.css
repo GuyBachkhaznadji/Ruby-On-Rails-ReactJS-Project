@@ -1,0 +1,25 @@
+.profile-list {
+    display: flex;
+    border-radius: 12px;
+    flex-flow: column wrap;
+    background-color: white;
+    margin: 5px;
+    padding: 5px;
+}
+
+.profile-list select {
+
+    flex: 1;
+    background: transparent;
+    width: 268px;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    line-height: 1;
+    border: 0;
+    border-radius: 0;
+    height: 34px;
+    /* -webkit-appearance: none; */
+ 
+}

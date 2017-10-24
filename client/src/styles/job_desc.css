@@ -1,0 +1,31 @@
+.job-desc {
+    display: flex;
+    border-radius: 12px;
+    flex-flow: column wrap;
+    background-color: white;
+    margin: 5px;
+    padding: 5px;
+}
+
+#search-button-box {
+    display: flex;
+}
+
+#search-button {
+    flex: 1;
+    transition-duration: 0.4s;  
+    background-color: #008CBA;
+    border-radius: 12px;
+    padding: 5px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: 2px solid #008CBA;
+}
+
+#search-button:hover {
+    background-color: white;
+    color: #008CBA;
+}

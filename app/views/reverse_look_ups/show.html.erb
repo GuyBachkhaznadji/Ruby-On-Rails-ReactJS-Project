@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @reverse_look_up.title %>
+</p>
+
+<p>
+  <strong>Keywords:</strong>
+  <%= @reverse_look_up.keyWords %>
+</p>
+
+<p>
+  <strong>Searchablekeys:</strong>
+  <%= @reverse_look_up.searchableKeys %>
+</p>
+
+<%= link_to 'Edit', edit_reverse_look_up_path(@reverse_look_up) %> |
+<%= link_to 'Back', reverse_look_ups_path %>

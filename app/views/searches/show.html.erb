@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @search.title %>
+</p>
+
+<p>
+  <strong>Profileindex:</strong>
+  <%= @search.profileIndex %>
+</p>
+
+<p>
+  <strong>Jobdesc:</strong>
+  <%= @search.jobDesc %>
+</p>
+
+<p>
+  <strong>Jobdescarray:</strong>
+  <%= @search.jobDescArray %>
+</p>
+
+<%= link_to 'Edit', edit_search_path(@search) %> |
+<%= link_to 'Back', searches_path %>

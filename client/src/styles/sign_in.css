@@ -1,0 +1,35 @@
+.sign-form{
+    flex: 1;
+    margin: 5px;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.sign-form input{
+    flex: 1;
+    margin: 5px;
+    height: 10px;
+    padding: 5px;
+}
+
+.sign-form button{
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    align-self: flex-end;
+
+    transition-duration: 0.4s;  
+    background-color: #008CBA;
+    border-radius: 12px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: 2px solid #008CBA;
+}
+
+.sign-form button:hover {
+    background-color: white;
+    color: #008CBA
+}

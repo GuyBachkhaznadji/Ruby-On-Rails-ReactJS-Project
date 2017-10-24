@@ -1,0 +1,47 @@
+.App {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.result-area {
+  flex: 1;
+}
+
+.input-area {
+  flex: 1;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.feedback {
+  display: flex;
+
+}
+#feedback {
+  flex: 1;
+  transition-duration: 0.4s;  
+  background-color: #4CAF50;
+  border-radius: 12px;
+  padding: 12px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border: 2px solid #4CAF50;
+}
+
+#feedback:hover {
+  background-color: white;
+  color: #4CAF50;
+}
+
+/* 
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+} */

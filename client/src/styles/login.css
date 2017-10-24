@@ -1,0 +1,20 @@
+.login{
+    display: flex;
+    border-radius: 12px;
+    flex-flow: column wrap;
+    background-color: white;
+    margin: 5px;
+  }
+
+  .login h2{
+    margin: 5px;
+    padding: 10px;
+  }
+
+  .login-forms{
+    display: flex;
+    padding: 5px;
+    margin: 5px;
+    flex-flow: row wrap;
+  }
+  
