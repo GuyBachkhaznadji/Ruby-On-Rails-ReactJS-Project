@@ -27,11 +27,18 @@ class App extends Component {
   closeModal() {
     this.setState({ isModalOpen: false })
 }
+
+// componentDidMount() {
+//     window.fetch('api/profiles')
+//       .then(response => response.json())
+//       .then(json => console.log(json))
+//       .catch(error => console.log(error))
+//   }
   
   render() {
     var functionality = <article>
     <LoginBox className="login"
-        url="http://localhost:5000/"
+        url="api/"
         setUser={this.setUser}
         currentUser={this.state.currentUser}/>
     </article>
@@ -45,7 +52,7 @@ class App extends Component {
     return (
       <div>
         <Header
-        url="http://localhost:5000/"
+        url="api/"
         setUser={this.setUser}
         currentUser={this.state.currentUser}/>
           {functionality}

@@ -71,7 +71,7 @@ class Functionality extends Component {
 
   getSearches(data){
     var request = new XMLHttpRequest();
-    request.open("POST", "http://localhost:5000/api/searches");
+    request.open("POST", "api/searches");
     request.setRequestHeader("Content-Type", "application/json");
     request.onload = function(){
       if(request.status === 200){
@@ -86,7 +86,7 @@ class Functionality extends Component {
 
   updateSearch(data){
     var request = new XMLHttpRequest();
-    request.open("PUT", "http://localhost:5000/api/searches/" + this.state.searches._id["$oid"]);
+    request.open("PUT", "api/searches/" + this.state.searches._id["$oid"]);
     request.setRequestHeader("Content-Type", "application/json");
     request.onload = function(){
       if(request.status === 200){
@@ -100,7 +100,7 @@ class Functionality extends Component {
   
 
   componentDidMount(){
-    const url = "http://localhost:5000/api/profiles"
+    const url = "api/profiles"
     fetch(url)
     .then((response) => response.json())
     .then((response) => this.setState( { profiles: response} ) );

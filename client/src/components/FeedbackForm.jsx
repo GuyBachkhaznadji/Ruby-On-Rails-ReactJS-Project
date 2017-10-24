@@ -5,7 +5,7 @@ class FeedbackForm extends Component {
     
     sendFeedback(data){
         var request = new XMLHttpRequest();
-        request.open("POST", "http://localhost:5000/api/feedback");
+        request.open("POST", "api/feedbacks");
         request.setRequestHeader("Content-Type", "application/json");
         request.onload = function(){
           if(request.status === 200){
