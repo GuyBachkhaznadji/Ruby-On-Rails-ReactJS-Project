@@ -1,4 +1,6 @@
 ActiveAdmin.register Profile do
+    permit_params :title, :id, :firstPriority, :secondPriority, :thirdPriority, :fourthPriority, :created
+
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
