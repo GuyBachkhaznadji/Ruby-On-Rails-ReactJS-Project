@@ -1,10 +1,15 @@
 .profile-list {
     display: flex;
-    border-radius: 12px;
     flex-flow: column wrap;
     background-color: white;
+    border-radius: 12px;
     margin: 5px;
     padding: 5px;
+}
+
+.profile-list h2 {
+    margin: 5px;
+    padding: 10px;
 }
 
 .profile-list select {
@@ -12,7 +17,8 @@
     flex: 1;
     background: transparent;
     width: 268px;
-    padding: 5px;
+    padding: 10px;
+    margin: 10px;
     background-color: black;
     color: white;
     font-size: 16px;

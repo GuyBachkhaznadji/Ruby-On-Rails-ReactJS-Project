@@ -38,7 +38,7 @@ class App extends Component {
   render() {
     var functionality = <article>
     <LoginBox className="login"
-        url="api/"
+        url="/"
         setUser={this.setUser}
         currentUser={this.state.currentUser}/>
     </article>
@@ -52,7 +52,7 @@ class App extends Component {
     return (
       <div>
         <Header
-        url="api/"
+        url="/"
         setUser={this.setUser}
         currentUser={this.state.currentUser}/>
           {functionality}

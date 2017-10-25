@@ -109,6 +109,9 @@ class Functionality extends Component {
   render() {
     return (
         <main >
+          <article id="explainer">
+            <h3>This explains shit</h3>
+          </article>
           <article className="App">
             <article className="input-area">
             <ProfileList 

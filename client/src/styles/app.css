@@ -1,3 +1,17 @@
+#explainer {
+  display: flex;
+  border-radius: 12px;
+  background-color: white;
+  margin: 5px;
+  padding: 5px;
+}
+
+#explainer h3{ 
+  margin: 5px;
+  padding: 10px;
+}
+  
+
 .App {
   display: flex;
   flex-flow: row wrap;
@@ -5,6 +19,7 @@
 
 .result-area {
   flex: 1;
+  height: fill;
 }
 
 .input-area {

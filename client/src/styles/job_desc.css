@@ -5,6 +5,7 @@
     background-color: white;
     margin: 5px;
     padding: 5px;
+    height: fill;
 }
 
 #search-button-box {

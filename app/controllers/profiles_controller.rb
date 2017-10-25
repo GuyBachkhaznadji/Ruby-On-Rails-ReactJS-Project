@@ -1,4 +1,4 @@
-class ProfilesController < ApiController
+class ProfilesController < ApplicationController
   
   # GET /profiles
   def index

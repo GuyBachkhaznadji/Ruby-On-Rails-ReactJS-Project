@@ -2,8 +2,6 @@ AdminUser.delete_all
 User.delete_all
 AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password')
 
-
-
 # db.reverseLookUp.insertMany(
 # 	[
 # 		{	

@@ -14,7 +14,7 @@ class JobDesc extends Component {
         <h2>Job Description</h2>
           <textarea id="job-desc-input" 
           name="job-desc-input" 
-          rows="8" 
+          rows="10" 
           cols="50" 
           placeholder="Put your job description here!" 
           form="job-desc-form"/>
