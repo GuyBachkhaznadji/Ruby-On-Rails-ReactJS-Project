@@ -7,21 +7,51 @@
     margin-left: 2px;
     margin-right: 2px;
   }
+
+  #explainer {
+    display: flex;
+    flex-flow: column wrap;
+    border-radius: 12px;
+    background-color: white;
+    margin: 5px;
+    padding: 5px;
+  }
   
-  .logo-motto {
+  #explainer h5{ 
+    margin: 5px;
+    padding: 5px;
+    /* margin-bottom: 1px;
+    padding-bottom: 1px; */
+    font-weight: normal;
+  }
+  
+  .logo-title {
     flex: 1;
     display: flex;
   }
   
+  #title-motto {
+    display: flex;
+    flex-flow: column wrap;
+  }
+
   .App-logo {
     height: 75px;
     margin: 5px;
   }
   
   .App-title {
-    align-self: flex-end;
+    align-self: flex-start;
     margin: 5px;
-    font-size: 1em;
+    font-size: 2.25em;
+    margin-top: 15px;
+  }
+
+  #motto {
+    align-self: flex-end;
+    font-size: 1.25em;
+    margin: 5px;
+    /* margin-top: 15px; */
   }
   
   #sign-out {

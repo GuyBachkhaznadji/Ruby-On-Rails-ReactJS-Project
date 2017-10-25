@@ -1,16 +1,7 @@
-#explainer {
+.main {
   display: flex;
-  border-radius: 12px;
-  background-color: white;
-  margin: 5px;
-  padding: 5px;
+  flex-flow: column wrap;
 }
-
-#explainer h3{ 
-  margin: 5px;
-  padding: 10px;
-}
-  
 
 .App {
   display: flex;

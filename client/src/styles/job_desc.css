@@ -1,11 +1,16 @@
 .job-desc {
     display: flex;
-    border-radius: 12px;
     flex-flow: column wrap;
     background-color: white;
+    border-radius: 12px;
     margin: 5px;
     padding: 5px;
-    height: fill;
+    /* height: fill; */
+}
+
+.job-desc h2 {
+    margin: 5px;
+    padding: 10px;
 }
 
 #search-button-box {

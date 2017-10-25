@@ -66,7 +66,7 @@ class Search extends Component {
         <section className="search">
           <h2>Concise Search</h2>
           <textarea  
-          rows="8" 
+          rows="2" 
           cols="50" 
           type="text" 
           id="conc-search" 

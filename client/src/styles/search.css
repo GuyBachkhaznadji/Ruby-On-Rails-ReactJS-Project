@@ -3,9 +3,9 @@
     flex-flow: column wrap;
     background-color: white;
     border-radius: 12px;
-    /* height: 95%;     */
     margin: 5px;
     padding: 5px;
+    /* height: 95%;     */
 }
 
 .search {
@@ -27,6 +27,8 @@
 }
 
 .search-rating{
+    display: flex;
+    flex-flow: column wrap;
     margin: 5px;
     padding: 5px;
 }
