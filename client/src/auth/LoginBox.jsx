@@ -36,7 +36,7 @@ class LoginBox extends React.Component {
         <h2>Login To Get Started</h2>
         <article className="login-forms">
           <SignIn url={this.props.url + "users/sign_in.json"} onSignIn={this.props.setUser}></SignIn>
-          <SignUp url={this.props.url + "users.json"} onSignUp={this.props.setUser}></SignUp>
+          {/* <SignUp url={this.props.url + "users.json"} onSignUp={this.props.setUser}></SignUp> */}
         </article>
       </div>
       if(this.props.currentUser){
