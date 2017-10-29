@@ -1,6 +1,8 @@
 AdminUser.delete_all
 User.delete_all
-AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password')
+AdminUser.create!(email: 'guysergebach@hotmail.com', password: 'ggyZzi52', password_confirmation: 'ggyZzi52')
+User.create!(email: 'guysergebach@hotmail.com', password: 'ggyZzi52', password_confirmation: 'ggyZzi52')
+User.create!(email: 'e.cotterill@parity.net', password: 'sherbetLemon', password_confirmation: 'sherbetLemon')
 
 # db.reverseLookUp.insertMany(
 # 	[
@@ -16,7 +18,7 @@ AdminUser.create!(email: 'admin@example.com', password: 'password', password_con
 #             }  
 # 		}
 # 	]
-# )
+# ) 
 Profile.delete_all
 ReverseLookUp.delete_all
 WordList.delete_all
@@ -28,15 +30,16 @@ soft_dev = Profile.create(
         title: "Software Developer",
         firstPriority: 
             {
-                javascript: ["javascript", "node", "'node.js'", "es2016", "es6", "ecmaScript"],
+                javascript: ["javascript", "node", "node.js", "es2016", "es6", "ecmaScript"],
                 java: ["java", "j2ee" ]
             },
         secondPriority: 
             {
-                angular: ["angular", "angularjs", "'angular.js'"],
-                react: ["react", "'react.js'", "reactJS"],
+                angular: ["angular", "angularjs", "angular.js"],
+                react: ["react", "react.js", "reactJS"],
                 restful: ["restful", "rest"],
-                spring: ["spring"] 
+                spring: ["spring"],
+                hibernate: ["hibernate"] 
             },
         thirdPriority:
             {
@@ -62,14 +65,16 @@ devops = Profile.create(
                 ansible: ["ansible"],
                 chef: ["chef"],
                 puppet: ["puppet"],
-                aws: ["aws", "'amazon web services'"],
+                aws: ["aws", "'amazon web services'", "amazon"],
                 azure: ["azure"],
-                docker: ["docker"],
-                rhel: ["rhel", "'red hat'", "redhat"]
+                docker: ["docker", "containerization", "containerisation"],
+                rhel: ["rhel", "'red hat'", "redhat", "red"],
+                satellite: ["satellite"]
             },
         secondPriority: 
             {
                 kubernetes: ["kubernetes", "k8s"],
+                openshift: ["openshift"],
                 jenkins: ["jenkins", "hudson"]
             },
         thirdPriority: 
@@ -88,9 +93,11 @@ agile_coach = Profile.create(
         title: "Agile Coach",
         firstPriority: 
             {
-                coach: ["'agile coach'"],
-                kanban: ["kanban"],
-                gds: ["gds", "'government digital service'"],
+                coach: ["coach"],
+                agile: ["agile"],
+                kanban: ["kanban", "lean"],
+                gds: ["gds", "'government digital service'", "government"],
+                testing: ["bdd", "tdd", "behaviour"],
                 product: ["product"]
             },        
         secondPriority: 
@@ -113,9 +120,9 @@ scrum_master = Profile.create(
         title: "Scrum Master",
         firstPriority: 
             {
-                scrum: ["csm", "psm", "scrum", "'certified scrum'"],
+                scrum: ["csm", "psm", "scrum"],
                 kanban: ["kanban", "lean"],
-                xp: ["bdd", "xp", "'extreme programming'"]
+                xp: ["bdd", "xp", "'extreme programming'", "extreme"]
             },
         secondPriority: 
             {
@@ -138,14 +145,14 @@ ux = Profile.create(
         firstPriority:
             {
                 accessibility: ["accessibility", "usability"],
-                ux: ["ux", "'user experience'"],
+                ux: ["ux", "'user experience'", "user"],
                 research: ["research"],
-                ui: ["ui", "'user design'", "interface"],
+                ui: ["ui", "'user design'", "interface"]
             },
 		secondPriority: 
             {
                 lab: ["lab"],
-                profile: ["profile", "persona"],
+                profile: ["profile", "persona"]
             },
 		thirdPriority:
             {
@@ -168,16 +175,141 @@ first_line_support = Profile.create(
                 exchange: ["exchange"],
                 office: ["office"],
                 windows: ["windows"],
-                versions: ["'8.1'"]
+                versions: ["8.1"]
             },
         secondPriority: 
             {
                 mobile: ["mobile", "tablet", "iphone", "android", "blackberry", "ipad"],
                 laptop: ["laptop", "lenovo"],
-		    }
+            },
+            thirdPriority:
+            {
+                mobile: ["mobile"]
+            },
+        fourthPriority: 
+            {
+
+            }
     }
 )
+
+# tester = Profile.create(	
+#     {
+#         title: "Automation Test Analyst",
+#         firstPriority: 
+#             {
+#                 bdd: ["bdd", "tdd", "'Behaviour Driven Development'"],
+#                 cucumber: ["gherkin", "cucumber"],
+#                 selenium: ["selenium", "seleniumwebdriver"]
+#             },
+#         secondPriority: 
+#             {
+#             },
+#         thirdPriority:
+#             {
+
+#             },
+#         fourthPriority:
+#             {
+
+#             }
+#     }
+# )
+
+network = Profile.create(	
+        {
+            title: "Networking / VMware",
+            firstPriority: 
+                {
+                    ccna: ["ccna"],
+                    ccnp: ["ccnp"],
+                    ccdp: ["ccdp"],
+                    vca: ["vca", "'VMware Certified Associate'"],
+                    vcp: ["vcp", "'VMware Certified Professional'", "SDN"],
+                    vcap: ["vcap", "'VMware Certified Advanced Professional'"],
+                    vcdx: ["vcdx", "'VMware Certified Design Expert'"],
+                    dcv: ["dcv", "'data centre virtualization'"],
+                    nv: ["nv", "'network virtualization'"],
+                    cma: ["cma", "cloud management and automation"],
+                    dtm: ["dtm", "Desktop and Mobility"],
+                    dbt: ["dbt", "Digital Business Transformation"]
+                },
+            secondPriority: 
+                {
+                    firewall: ["checkpoint", "fortinet", "juniper", "firewall"],
+                    voip: ["voip", "voiceover", "voice over"],
+                    vsphere: ["vSphere"],
+                    nsx: ["nsx"],
+                    vrealize: ["vrealize", "vrealise", "vRA", "vROps"]
+                },
+            thirdPriority:
+                {
+    
+                },
+            fourthPriority:
+                {
+    
+                }
+    }
+)
+
+
+hr = Profile.create(	
+    {
+        title: "Human Resources",
+        firstPriority: 
+                {
+                    cipd: ["cipd"],
+                    union: ["union", "unionised", "unionized"],
+                    relations: ["'employee relations'", "relations"],
+                    rewards: ["rewards", "benefits"],
+                    performance: ["disciplinary", "grievance", "absence", "performance"],
+                    recruitment: ["recruitment", "campaign"]
+                },
+            secondPriority: 
+                {
+                    tna: ["tna", "'training needs analysis'" "needs"],
+                    ilm: ["ilm", "'Institute of Leadership'", "leadership"],
+                    ld: ["L&D", "learning", "development"]
+                },
+            thirdPriority:
+                {
+    
+                },
+            fourthPriority:
+                {
+    
+                }
+        }
+)
+
+procurement = Profile.create(	
+    {
+        title: "Procurement",
+        firstPriority: 
+                {
+                    cips: ["mcips", "cips", "'Institute of Purchasing'"],
+                    ojeu: ["ojeu", "ojec", "'Official Journal of the European Union'", ]
+                },
+            secondPriority: 
+                {
+                    water: ["'(Water OR Power OR Construction)'", "water", "construction", "power"],
+                    pcs: ["pcs", "'public contracts scotland'"],
+                    itt: ["itt", "'invitation to tender'"],
+                    pqq: ["pqq", "'prequalification questionnaire'"]
+                },
+            thirdPriority:
+                {
+    
+                },
+            fourthPriority:
+                {
+    
+                }
+        }
+    )
 
 ReverseLookUp.generate_all_reverses
 all_words = WordList.collect_words
 WordList.create({words: all_words})
+

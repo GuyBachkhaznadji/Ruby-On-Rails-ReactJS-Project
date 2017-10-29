@@ -98,15 +98,21 @@ class Functionality extends Component {
     request.send(JSON.stringify(data));
   }
   
+  sortProfiles(profiles){
+    profiles.sort( (a, b) => a.title - b.title );
+    this.setState( { profiles: profiles} );
+    // console.log(profiles);
+  }
 
   componentDidMount(){
     const url = "api/profiles"
     fetch(url)
     .then((response) => response.json())
-    .then((response) => this.setState( { profiles: response} ) );
+    .then((response) => this.sortProfiles(response) );
   }
 
   render() {
+    
     return (
         <main className="main" >
           <article className="App">

@@ -14,15 +14,17 @@ class Header extends Component {
    
     return (
     <header className="App-header">
-        <section className="logo-title">
-            <img src={logo} className="App-logo" alt="logo" />
-            <section id="title-motto">
-                <p className="App-title">Lighthouse</p>
-                <p id="motto">Illuminating Your Search</p>
+        <section id="top-container">
+            <section className="logo-title">
+                <img src={logo} className="App-logo" alt="logo" />
+                <section id="title-motto">
+                    <p className="App-title">Lighthouse</p>
+                    <p id="motto">Illuminating Your Search</p>
+                </section>
             </section>
-        </section>
-        <section className="buttons">
+            <section className="buttons">
             {signOut}
+            </section>
         </section>
         <article id="explainer">
             <h5>Lighthouse makes searching easier</h5>

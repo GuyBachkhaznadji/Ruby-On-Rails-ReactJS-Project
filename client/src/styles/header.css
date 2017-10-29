@@ -3,9 +3,13 @@
     background-color: white;
     display: flex;
     border-radius: 12px;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     margin-left: 2px;
     margin-right: 2px;
+  }
+
+  #top-container {
+    display: flex;
   }
 
   #explainer {
