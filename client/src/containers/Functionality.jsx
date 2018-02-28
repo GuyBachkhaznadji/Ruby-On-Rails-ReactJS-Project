@@ -126,7 +126,8 @@ class Functionality extends Component {
             <FeedbackForm 
             isOpen={this.props.isModalOpen} 
             onClose={() => this.props.closeModal()}
-            closeModal={this.props.closeModal}>
+            closeModal={this.props.closeModal}
+            currentUser={this.props.currentUser}>
             </FeedbackForm>
             </article>
             <article className="result-area">

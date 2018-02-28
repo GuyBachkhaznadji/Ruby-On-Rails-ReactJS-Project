@@ -46,7 +46,8 @@ class App extends Component {
     if (this.state.currentUser){
       functionality =  <Functionality openModal={this.openModal}
         closeModal={this.closeModal}
-        isModalOpen={this.state.isModalOpen}/>
+        isModalOpen={this.state.isModalOpen}
+        currentUser={this.state.currentUser}/>
     }
 
     return (
